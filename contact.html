@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>CSA</title>
+<title>WUSTL - CSA</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="" />
 <meta name="author" content="http://bootstraptaste.com" />
@@ -89,10 +89,10 @@
 			<div class="col-lg-12">
 				<h4><strong>If you would like to reach us, please fill out the contact form below!</strong></h4>
 				<p>If you would like to join, collaborate with, or even just message CSA, please fill out the below form! We are always looking for fresh ideas and passionate members. We believe listening to what others have to say will only benefit everyone.</p>
-				<form id="contactform" action="contact/contact.php" method="post" class="validateform" name="send-contact">
-					<!-- <div id="sendmessage">
+				<!-- <form id="contactform" action="contact/contact.php" method="post" class="validateform" name="send-contact">
+					<div id="sendmessage">
 						 Your message has been sent. Thank you!
-					</div> -->
+					</div>
 					<div class="row">
 						<div class="col-lg-4 field">
 							<input type="text" name="name" placeholder="* Enter your full name" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
@@ -119,7 +119,72 @@
 							</p>
 						</div>
 					</div>
-				</form>
+				</form> -->
+
+        <!-- <a href="" data-toggle="modal" data-target="#bannerformmodal">Load me</a> -->
+
+        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModalLabel">Contact Us!</button>
+
+      <div class="modal fade myModalLabel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="myModalLabel">
+
+      <div class="modal-dialog ">
+        <div class="modal-content">
+          <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Contact Form</h4>
+                </div>
+                <div class="modal-body">
+                     <form id="requestacallform" method="POST" name="requestacallform">
+
+                                <div class="form-group">
+                                    <div class="input-group">                               
+                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                    <input id="first_name" type="text" class="form-control" placeholder="First Name" name="first_name"/>
+                                    </div>
+                              </div>
+                              <div class="form-group">
+                                    <div class="input-group">                               
+                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                    <input id="last_name" type="text" class="form-control" placeholder="Last Name" name="last_name"/>
+                                    </div>
+                              </div>
+                                <div class="form-group">
+                                    <div class="input-group">                               
+                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                    <input id="email1" type="text" class="form-control" placeholder="Email" name="email1" onchange="validateEmailAdd();"/>
+                                    </div>
+                              </div>
+                                <div class="form-group">
+                                    <div class="input-group">                               
+                                    <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                    <input id="phone_mobile" type="text" class="form-control" placeholder="Mobile" name="phone_mobile"/>
+                                    </div>
+                              </div>
+                              <div class="form-group">
+                                    <div class="input-group">                               
+                                    <span class="input-group-addon"><i class="fa fa-group"></i></span>
+                                    <input id="subject_c" type="text" class="form-control" placeholder="Subject" name="subject_c"/>
+                                    </div>
+                              </div>
+                                <div class="control-group">
+                                    <div class="controls">                     
+                                        <textarea id="description" type="text" name="description"  placeholder="Description"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                  </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+              </div>          
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+
 			</div>
 		</div>
 	</div>
@@ -143,17 +208,73 @@
                 </div>
                 <div class="footer-col col-md-4">
                   <h3>Want to Reach Us?</h3>
-                  <p>csa@su.wustl.edu
-                    <br>
-                    <a hhref="contact.html" target="_blank">Online Form</a>.</p>
+                  <p>csa@su.wustl.edu <br>
+                    <a href="" data-toggle="modal" data-target="#myModalLabel">Contact Us!</a></p>
+      <div class="modal fade myModalLabel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="myModalLabel">
+
+      <div class="modal-dialog ">
+        <div class="modal-content">
+          <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Contact Form</h4>
+                </div>
+                <div class="modal-body">
+                     <form id="requestacallform" method="POST" name="requestacallform">
+
+                                <div class="form-group">
+                                    <div class="input-group">                               
+                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                    <input id="first_name" type="text" class="form-control" placeholder="First Name" name="first_name"/>
+                                    </div>
+                              </div>
+                              <div class="form-group">
+                                    <div class="input-group">                               
+                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                    <input id="last_name" type="text" class="form-control" placeholder="Last Name" name="last_name"/>
+                                    </div>
+                              </div>
+                                <div class="form-group">
+                                    <div class="input-group">                               
+                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                    <input id="email1" type="text" class="form-control" placeholder="Email" name="email1" onchange="validateEmailAdd();"/>
+                                    </div>
+                              </div>
+                                <div class="form-group">
+                                    <div class="input-group">                               
+                                    <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                    <input id="phone_mobile" type="text" class="form-control" placeholder="Mobile" name="phone_mobile"/>
+                                    </div>
+                              </div>
+                              <div class="form-group">
+                                    <div class="input-group">                               
+                                    <span class="input-group-addon"><i class="fa fa-group"></i></span>
+                                    <input id="subject_c" type="text" class="form-control" placeholder="Subject" name="subject_c"/>
+                                    </div>
+                              </div>
+                                <div class="control-group">
+                                    <div class="controls">                     
+                                        <textarea id="description" type="text" name="description"  placeholder="Description"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                  </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+              </div>          
+                </div>
+                </div>
+                </div>
                 </div>
               </div>
             </div>
           </div>
-        </footer>
+        </div>
+      </footer>
 
 </div>
-<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+<!-- <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a> -->
 <!-- javascript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
